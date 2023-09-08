@@ -1,6 +1,6 @@
 # Tiktok Clone (tiktok-clone)
 
-### Learn how to build this!
+### Learn how to build this ryan tang!
 
 If you'd like a step-by-step guide on how to build this just **CLICK THE IMAGE BELOW**
 
