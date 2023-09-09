@@ -187,7 +187,7 @@
 <script setup>
 import UploadLayout from "~/layouts/UploadLayout.vue";
 
-const { $userStore } = useNuxtApp();
+const { $userStore, $productStore } = useNuxtApp();
 const router = useRouter();
 
 let file = ref(null);
@@ -197,6 +197,9 @@ let caption = ref("");
 let fileData = ref(null);
 let errors = ref(null);
 let isUploading = ref(false);
+let selectedProduct = ref(null);
+productStore.getProducts();
+let purchasedProducts = ref(productStore.products);
 
 definePageMeta({ middleware: "auth" });
 
