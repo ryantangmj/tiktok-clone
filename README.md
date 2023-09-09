@@ -23,7 +23,7 @@ You should be good to go!
 
 # Application Images
 
-<img width="1439" src="https://github.com/John-Weeks-Dev/tiktok-clone/assets/122259454/e50edca2-a0aa-43da-9bac-29f277bd87d4>
+<img width="1439" src="https://github.com/John-Weeks-Dev/tiktok-clone/assets/122259454/e50edca2-a0aa-43da-9bac-29f277bd87d4">
 <img width="1439" src="https://user-images.githubusercontent.com/108229029/225040773-ded6d97d-5ad6-4575-9684-1356b8721878.png">
 <img width="1439" src="https://user-images.githubusercontent.com/108229029/225042476-fa28a57f-ddf2-4072-8632-2521608ab700.png">
 <img width="1439" src="https://user-images.githubusercontent.com/108229029/225042661-e4555f75-4844-41b0-9078-acb49c8f9c08.png">
