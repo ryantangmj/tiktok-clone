@@ -10,6 +10,7 @@ export const useUserStore = defineStore("user", {
     name: "",
     bio: "",
     image: "",
+    currency: "",
   }),
   actions: {
     async getTokens() {
@@ -39,6 +40,7 @@ export const useUserStore = defineStore("user", {
       this.$state.name = res.data[0].name;
       this.$state.bio = res.data[0].bio;
       this.$state.image = res.data[0].image;
+      this.$state.currency = res.data[0].currency;
     },
 
     async updateUserImage(data) {
@@ -99,6 +101,7 @@ export const useUserStore = defineStore("user", {
       });
 
       console.log(res);
+      this.$state.currency = res.data.currency;
 
       let singlePost = null;
 
@@ -128,6 +131,8 @@ export const useUserStore = defineStore("user", {
       });
 
       let res = await $axios.delete("/api/likes/" + deleteLike.id);
+      console.log(res);
+      this.$state.currency = res.data.currency;
 
       for (let i = 0; i < singlePost.likes.length; i++) {
         const like = singlePost.likes[i];
