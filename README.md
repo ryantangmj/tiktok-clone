@@ -24,14 +24,8 @@ You should be good to go!
 # Application Images
 
 <img width="1439" src="https://github.com/John-Weeks-Dev/tiktok-clone/assets/122259454/e50edca2-a0aa-43da-9bac-29f277bd87d4">
-<img width="1439" src="https://user-images.githubusercontent.com/108229029/225040773-ded6d97d-5ad6-4575-9684-1356b8721878.png">
-<img width="1439" src="https://user-images.githubusercontent.com/108229029/225042476-fa28a57f-ddf2-4072-8632-2521608ab700.png">
-<img width="1439" src="https://user-images.githubusercontent.com/108229029/225042661-e4555f75-4844-41b0-9078-acb49c8f9c08.png">
-<img width="1439" src="https://user-images.githubusercontent.com/108229029/225042896-17982338-a03a-4332-a47f-3afc881f562c.png">
-<img width="1439" src="https://user-images.githubusercontent.com/108229029/225043322-29eea167-121c-4bd8-b016-e0f625376e59.png">
-<img width="1439" src="https://user-images.githubusercontent.com/108229029/225043588-cd9a8b33-b911-49ce-85a7-78b46488eae5.png">
-<img width="1439" src="https://user-images.githubusercontent.com/108229029/225046843-166000b1-1956-4b69-9cfa-1fc16ab4982a.png">
-<img width="1439" src="https://user-images.githubusercontent.com/108229029/225046955-fd9890f0-d98e-4189-9fa4-0b39d4773d9a.png">
-
-<div>
-  <img width="333" src="https://user-images.githubusercontent.com/108229029/225044829-1b9fe754-ddc8-4db4-974d-
+<img width="1439" src="https://github.com/John-Weeks-Dev/tiktok-clone/assets/122259454/bffdff9a-c5f5-475a-a7a8-4ec0fbc3a194">
+<img width="1439" src="https://github.com/John-Weeks-Dev/tiktok-clone/assets/122259454/1898a92a-e93d-43aa-acd4-69b8ff1ff25d">
+<img width="1439" src="https://github.com/John-Weeks-Dev/tiktok-clone/assets/122259454/91a23347-992b-4eba-ae39-5f34b4740b1d">
+<img width="1439" src="https://github.com/John-Weeks-Dev/tiktok-clone/assets/122259454/6cb7134c-4504-4592-91bc-30c22a977f25">
+<img width="1439" src="https://github.com/John-Weeks-Dev/tiktok-clone/assets/122259454/b37e54a2-e451-4fb9-9b4b-ca87054d9039">
