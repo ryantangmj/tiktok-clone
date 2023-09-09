@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   // ... other Nuxt config options ...
 
   generate: {
-    routes: ['/sell'], // Define the custom route for /sell
+    routes: ['/sell', '/productPage'], // Define the custom routes
   },
-
+  
   modules: [
     'nuxt-icon', 
     '@pinia/nuxt', 
