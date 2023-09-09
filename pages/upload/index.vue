@@ -144,6 +144,10 @@
                 class="w-full border p-3 rounded-md focus:outline-none"
               >
                 <option value="" >Teen Girls Red Formal Dress</option>
+                <option value="" >Teen Girls Black Crop Top</option>
+                <option value="" >Black Adidas Air Force</option>
+                <option value="" >Long women football socks</option>
+                <option value="" >Adidas Women Shorts</option>
                 <!-- Iterate over purchased products and create an option for each -->
                 <option
                   v-for="product in purchasedProducts"
