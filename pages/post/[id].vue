@@ -57,7 +57,6 @@
                     :src="$generalStore.selectedPost.video"
                 />
             </div>
-
         </div>
 
         <div 
@@ -126,7 +125,13 @@
                     <div class="rounded-full bg-gray-200 p-2 cursor-pointer">
                         <Icon name="bx:bxs-message-rounded-dots" size="25"/>
                     </div>
-                    <span class="text-xs pl-2 text-gray-800 font-semibold">43</span>
+                    <span class="text-xs pl-2 pr-4 text-gray-800 font-semibold">43</span>
+                </div>
+
+                <div class="pb-4 text-center flex items-center">
+                    <div class="rounded-full bg-gray-200 p-2 cursor-pointer">
+                        <Icon name="mdi:store" size="25"/>
+                    </div>
                 </div>
             </div>
 
