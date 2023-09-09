@@ -143,7 +143,7 @@
                 v-model="selectedProduct"
                 class="w-full border p-3 rounded-md focus:outline-none"
               >
-                <option value="" disabled>Select a purchased product</option>
+                <option value="" >Teen Girls Patch Pocket Suedette Dress With Tee</option>
                 <!-- Iterate over purchased products and create an option for each -->
                 <option
                   v-for="product in purchasedProducts"

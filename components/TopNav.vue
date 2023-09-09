@@ -77,6 +77,14 @@
                 <Icon name="ph:user" size="20" />
                 <span class="pl-2 font-semibold text-sm">Profile</span>
               </NuxtLink>
+              <NuxtLink
+                :to="`/shop`"
+                @click="showMenu = false"
+                class="flex items-center justify-start py-3 px-2 hover-bg-gray-100 border-t cursor-pointer"
+              >
+                <Icon name="mdi:shop" size="20" />
+                <span class="pl-2 font-semibold text-sm">Shop</span>
+              </NuxtLink>
               <div
                 @click="logout()"
                 class="flex items-center justify-start py-3 px-1.5 hover-bg-gray-100 border-t cursor-pointer"

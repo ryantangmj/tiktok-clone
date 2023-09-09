@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   // ... other Nuxt config options ...
 
   generate: {
-    routes: ['/sell',], // Define the custom routes
+    routes: ['/sell', '/shop', ], // Define the custom routes
   },
 
   modules: [
