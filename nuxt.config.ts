@@ -1,6 +1,11 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
-  pages: true,
+  // ... other Nuxt config options ...
+
+  generate: {
+    routes: ['/sell'], // Define the custom route for /sell
+  },
+
   modules: [
     'nuxt-icon', 
     '@pinia/nuxt', 
