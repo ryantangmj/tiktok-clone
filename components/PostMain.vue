@@ -47,6 +47,14 @@
                 </div>
                 <div class="relative mr-[75px]">
                     <div class="absolute bottom-0 pl-2">
+                        <!-- might need to change the condition depending on the product entity in shop -->
+                        <div class="pb-4 text-center">
+                            <div v-if="post.product" class="rounded-full bg-gray-200 p-2 cursor-pointer">
+                                <Icon name="mdi:store" size="25"/>
+                                <span class="text-xs text-gray-800 font-semibold">prod</span>
+                            </div>
+                        </div>
+
                         <div class="pb-4 text-center">
                             <button
                                 @click="isLiked ? unlikePost(post) : likePost(post)"

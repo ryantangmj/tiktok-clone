@@ -150,6 +150,19 @@
                         >
                     </div>
 
+                    <div class="mt-5">
+                        <div class="flex items-center justify-between">
+                            <div class="mb-1 text-[15px]">Product</div>
+                        </div>
+                        <div>
+                            <select v-model="selectedProduct" class="w-full border p-3 rounded-md focus:outline-none">
+                                <option value="" disabled>Select a purchased product</option>
+                                <!-- Iterate over purchased products and create an option for each -->
+                                <option v-for="product in purchasedProducts" :value="product.id">{{ product.name }}</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="flex gap-3">
                         <button 
                             @click="discard()"
@@ -264,3 +277,21 @@ const clearVideo = () => {
     fileData.value = null
 }
 </script>
+
+<!-- Change this script for the product list -->
+<!-- <script>
+export default {
+    data() {
+        return {
+            selectedProduct: '', // Holds the selected product ID
+            caption: '', // Holds other data if needed
+            purchasedProducts: [
+                { id: 1, name: 'Product A' },
+                { id: 2, name: 'Product B' },
+                { id: 3, name: 'Product C' },
+                // Add more products here
+            ],
+        };
+    },
+};
+</script> -->
