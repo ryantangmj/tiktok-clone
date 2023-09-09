@@ -9,21 +9,20 @@
       <div class="bg-white rounded-lg shadow-md p-8">
         <!-- Product Photo -->
         <img
-          class="rounded-lg h-160 w-160" 
-          src="~/assets/images/Dress.png"
+          class="rounded-lg h-110 w-110" 
+          src="~/assets/images/red.png"
           alt="Product Photo"
         />
 
         <!-- Product Name -->
-        <div class="text-3xl font-semibold">Teen Girls Patch Pocket Suedette Dress With Tee</div>
+        <div class="text-3xl font-semibold">Teen Girls Red Formal Dress</div>
 
         <!-- Product Description -->
         <div class="text-base mt-4 text-gray-700">
-          <div>Color: Red and White</div>
-          <div>Style: Casual</div>
+          <div>Color: Red</div>
+          <div>Style: Formal</div>
           <div>Pattern Type: Colorblock</div>
           <div>Top Type: Tee</div>
-          <div>Details: Button Front, Rib-Knit, Pocket</div>
           <div>Neckline: Stand Collar</div>
           <div>Sleeve Length: Long Sleeve</div>
           <div>Sleeve Type: Regular Sleeve</div>
@@ -112,6 +111,7 @@ let showConfirmation = ref(false);
 
 const handlePurchaseConfirmation = (confirmed) => {
   if (confirmed) {
+    alert(`You bought ${product.name} , post a product promoting this product to get TikTok Coins.`);
     // Redirect to the home page
     try {
         if (res.status === 200) {

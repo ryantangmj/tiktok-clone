@@ -1,22 +1,23 @@
 <template>
-    <div class="shop-page">
-      <div class="shop-header">
-        <h1 class="shop-title">TikTok Shop</h1>
-        <div class="search-bar">
-          <input type="text" v-model="searchQuery" placeholder="Search products..." />
-          <button @click="searchProducts">Search</button>
-        </div>
-      </div>
+  <div class="bg-gray-100 min-h-screen">
+    <!-- Include your existing TopNav component here -->
+    <TopNav />
+    <div class="container mx-auto p-8 pt-16">> 
       <div class="product-list">
         <div v-for="product in filteredProducts" :key="product.id" class="product-card">
-          <img :src="product.image" alt="Product Image" class="product-image" />
+          <img
+            class="rounded-lg h-160 w-160" 
+            src="~/assets/images/Dress.png"
+            alt="Product Photo"
+          />
           <h2 class="product-name">{{ product.name }}</h2>
           <p class="product-description">{{ product.description }}</p>
           <div class="product-price">${{ product.price }}</div>
-          <button @click="buyProduct(product)">Buy Now</button>
+          <button @click="buyProduct(product)">Edit Listing</button>
         </div>
       </div>
     </div>
+  </div>
   </template>
   
   <script>
@@ -49,7 +50,7 @@
       },
       buyProduct(product) {
         // Implement the buy product functionality
-        alert(`You bought ${product.name} for ${product.price} TikTok Coins.`);
+        alert(`You can edit your listing!`);
       },
     },
   };
