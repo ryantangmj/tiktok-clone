@@ -94,22 +94,29 @@ onMounted(() => {
     let observer = new IntersectionObserver(function(entries) {
         if (entries[0].isIntersecting) {
             console.log('Element is playing' + post.value.id);
-            video.value.play()
+            if (video.value) {
+                video.value.play();
+            }
         } else {
             console.log('Element is paused' + post.value.id);
-            video.value.pause()
+            if (video.value) {
+                video.value.pause();
+            }
         }
-
     }, { threshold: [0.6] });
 
     observer.observe(document.getElementById(`PostMain-${post.value.id}`));
-})
+});
+
 
 onBeforeUnmount(() => {
-    video.value.pause()
-    video.value.currentTime = 0
-    video.value.src = ''
-})
+    if (video.value) {
+        video.value.pause();
+        video.value.currentTime = 0;
+        video.value.src = '';
+    }
+});
+
 
 const isLiked = computed(() => {
     let res = post.value.likes.find(like => like.user_id === $userStore.id)
