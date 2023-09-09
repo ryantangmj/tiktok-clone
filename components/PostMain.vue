@@ -51,9 +51,12 @@
                     <div class="absolute bottom-0 pl-2">
                         <!-- might need to change the condition depending on the product entity in shop -->
                         <div class="pb-4 text-center">
-                            <div class="rounded-full bg-gray-200 p-2 cursor-pointer">
+                            <button
+                                @click= goProdPage(post)
+                                class="rounded-full bg-gray-200 p-2 cursor-pointer"
+                            >
                                 <Icon name="mdi:store" size="25"/>
-                            </div>
+                            </button>
                         </div>
 
                         
@@ -158,6 +161,16 @@ const unlikePost = async (post) => {
     } catch (error) {
         console.log(error)
     }
+}
+
+const goProdPage = (post) => {
+    if (!$userStore.id) {
+        $generalStore.isLoginOpen = true
+        return
+    }
+    $generalStore.setBackUrl('/')
+    $generalStore.selectedPost = null
+    setTimeout(() => router.push(`/product/${post.id}`), 200)
 }
 
 const isLoggedIn = (user) => {
