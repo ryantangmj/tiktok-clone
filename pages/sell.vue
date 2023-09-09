@@ -246,7 +246,7 @@ const createPost = async () => {
   data.append("name", productName.value || "");
   data.append("description", productDescription.value || "");
   data.append("price", productPrice.value || "");
-  data.append("image", file.value);
+  data.append("image", fileData.value);
 
   try {
     let res = await $userStore.createProduct(data);
