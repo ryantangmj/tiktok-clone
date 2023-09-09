@@ -12,8 +12,15 @@
                 <div class="ml-5 w-full">
                     <div class="text-[30px] font-bold truncate">
                         {{ $generalStore.allLowerCaseNoCaps($profileStore.name) }}
+                        <span class="flex items-center">
+                            <!-- Add coin display here -->
+                            <span class="text-[15px] text-gray-500">
+                                <Icon name="mdi:coin" size="18" class="mr-1" style="color: gold;"/>
+                                {{ $userStore.coins }}
+                            </span>
+                        </span>
                     </div>
-                    <div class="text-[18px] truncate">{{ $profileStore.name }}</div>
+       
                     <button 
                         v-if="$profileStore.id === $userStore.id"
                         @click="$generalStore.isEditProfileOpen = true" 
