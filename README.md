@@ -35,3 +35,6 @@ Added shop tab to access the ecommerce.
 
 Productlisting page with all product details.
 <img width="1439" src="https://github.com/John-Weeks-Dev/tiktok-clone/assets/122259454/b37e54a2-e451-4fb9-9b4b-ca87054d9039">
+
+# Credits
+John-Weeks-Dev (tiktok skeleton)
