@@ -57,20 +57,36 @@
         <div class="bg-white w-2 h-6"></div> <!-- White box with a height and width -->
 
         <!-- Add to Cart and Contact Seller Buttons -->
+        <button
+          @click="showConfirmation = true"
+          class="bg-gray-700 text-white px-4 py-3 rounded-lg font-semibold text-lg hover:bg-[#E02450]"
+        >
+          Purchase
+        </button>
 
-          <button
-            @click="contactSeller"
-            class="bg-gray-700 text-white px-4 py-3 rounded-lg font-semibold text-lg hover:bg-[#E02450]"
-          >
-            Contact Us
-          </button>
-          <div class="bg-white w-2 h-6"></div> <!-- White box with a height and width -->
-          <button
-            @click="addToCart"
-            class="bg-gray-700 text-white px-4 py-3 rounded-lg font-semibold text-lg hover:bg-[#E02450]"
-          >
-            Add to Cart
-          </button>
+         <!-- Render Confirmation Popup -->
+        <div v-if="showConfirmation" class="fixed inset-0 flex items-center justify-center z-50">
+          <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-gray-700">
+            <p class="text-2xl font-semibold mb-4">Confirm Purchase</p>
+            <p class="text-lg">Product: {{ product.name }}</p>
+            <p class="text-lg">Quantity: {{ selectedQuantity }}</p>
+            <p class="text-lg">Price: ${{ calculatedPrice.toFixed(2) }}</p>
+            <div class="mt-6 flex justify-end space-x-4">
+              <button
+                @click="handlePurchaseConfirmation(true)"
+                class="px-4 py-2 bg-gray-400 text-white rounded-lg font-semibold hover:bg-gray-500"
+              >
+                Yes
+              </button>
+              <button
+                @click="handlePurchaseConfirmation(false)"
+                class="px-4 py-2 bg-gray-400 text-white rounded-lg font-semibold hover:bg-gray-500"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -82,29 +98,36 @@ import { computed, ref } from 'vue';
 const selectedQuantity = ref(1); // Default quantity selected
 
 const product = {
-  name: 'Sample Product',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  name: 'Teen Girls Patch Pocket Suedette Dress With Tee',
+  description: 'example description.',
   price: 19.99,
-  image: '/path/to/your/product/image.jpg',
+  image: 'image to path',
 };
 
 const calculatedPrice = computed(() => {
   return product.price * selectedQuantity.value;
 });
 
-const addToCart = () => {
-  // You can add the selected product and quantity to the shopping cart here
-  // For now, we'll just log the selected item for demonstration purposes
-  const cartItem = {
-    product,
-    quantity: selectedQuantity.value,
-  };
+let showConfirmation = ref(false);
 
-  console.log('Added to Cart:', cartItem);
-};
-
-const contactSeller = () => {
-  // Logic to contact seller
+const handlePurchaseConfirmation = (confirmed) => {
+  if (confirmed) {
+    // Redirect to the home page
+    try {
+        if (res.status === 200) {
+            setTimeout(() => {
+                router.push('/profile/' + $userStore.id)
+                isUploading.value = false
+            }, 1000)
+        }
+    } catch (error) {
+        errors.value = error.response.data.errors
+        isUploading.value = false
+    }
+  } else {
+    // Close the confirmation popup
+    showConfirmation.value = false;
+  }
 };
 </script>
 
