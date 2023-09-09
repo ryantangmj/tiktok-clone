@@ -147,6 +147,7 @@
                 <!-- Iterate over purchased products and create an option for each -->
                 <option
                   v-for="product in purchasedProducts"
+                  :key="product.id"
                   :value="product.id"
                 >
                   {{ product.name }}
@@ -198,8 +199,10 @@ let fileData = ref(null);
 let errors = ref(null);
 let isUploading = ref(false);
 let selectedProduct = ref(null);
-productStore.getProducts();
-let purchasedProducts = ref(productStore.products);
+$productStore.getProducts();
+let purchasedProducts = ref($productStore.products);
+console.log(purchasedProducts.value);
+console.log($productStore.products);
 
 definePageMeta({ middleware: "auth" });
 

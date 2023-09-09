@@ -11,7 +11,7 @@ export const useProductStore = defineStore("product", {
   }),
   actions: {
     async getProducts() {
-      let res = await $axios.get("/api/products");
+      let res = await $axios.get("/api/productlist");
       this.products = res.data;
     },
     async getProductById(id) {
