@@ -1,4 +1,4 @@
-# Tiktok Clone (tiktok-clone)
+## Project by Lim Jacob, Yow Siao Kang, Ryan Tang, Glenn Quah
 
 ## NOTE
 
